@@ -47,8 +47,8 @@ const allQuestions = {
     },
     {
         "question": "They _____ (play) football every Saturday. Last Saturday, they _____ (win) the game.",
-        "options": [" played / won", " play / win", " playing / winning"],
-        "answer": " played / won"
+        "options": [" play / won", " play / win", " playing / winning"],
+        "answer": " play / won"
     },
     {
         "question": "He _____ (write) letters to his friends every month. Last week, he _____ (send) them invitations.",
