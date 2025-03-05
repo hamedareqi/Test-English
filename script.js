@@ -108,82 +108,82 @@ const allQuestions = {
     { "question": "What is the synonym of 'Capable'?", "options": ["Unwilling to do anything", "Able to do something", "Limited in doing something"], "answer": "Able to do something" }
         ],
         grammar: [
-            
-        {
+              {
         "question": "He _____ (write) a letter.",
-        "options": [" writes", " wrote", " writing"],
-        "answer": " writes"
+        "options": ["writes", "wrote", "writing"],
+        "answer": "writes"
     },
     {
         "question": "They _____ (not play) basketball right now.",
-        "options": [" do not play", " does not play", " not playing"],
-        "answer": " do not play"
+        "options": ["are not playing", "does not play", "not playing"],
+        "answer": "are not playing"
     },
     {
         "question": "I _____ (drink) coffee at this moment.",
-        "options": [" drink", " drinking", " drinks"],
-        "answer": " drink"
+        "options": ["am drinking", "drinks", "drink"],
+        "answer": "am drinking"
     },
     {
         "question": "What _____ you _____ (have) for dinner?",
-        "options": [" do / have", " did / have", " does / have"],
-        "answer": " do / have"
+        "options": ["do / have", "did / have", "does / have"],
+        "answer": "do / have"
     },
     {
         "question": "We _____ (not/listen) to music tonight.",
-        "options": [" do not listen", " does not listen", " not listening"],
-        "answer": " do not listen"
+        "options": ["are not listening", "does not listen", "not listening"],
+        "answer": "are not listening"
     },
     {
         "question": "Please be quiet during the meeting.",
-        "options": [" The project is delayed.", " I need to focus.", " I'm feeling tired."],
-        "answer": " I need to focus."
+        "options": ["The project is delayed.", "I need to focus.", "I'm feeling tired."],
+        "answer": "I need to focus."
     },
     {
         "question": "I have nowhere to go right now.",
-        "options": [" I'm staying at a hotel.", " I feel fine.", " I'm really bored."],
-        "answer": " I'm really bored."
+        "options": ["I'm staying at a hotel.", "I feel fine.", "I'm really bored."],
+        "answer": "I'm really bored."
     },
     {
         "question": "Things are not going well at school.",
-        "options": [" I'm struggling with my studies.", " I'm feeling great.", " It's a beautiful day."],
-        "answer": " I'm struggling with my studies."
+        "options": ["I'm struggling with my studies.", "I'm feeling great.", "It's a beautiful day."],
+        "answer": "I'm struggling with my studies."
     },
     {
         "question": "I need to grab a snack soon.",
-        "options": [" I'm not hungry.", " I feel full.", " I need to eat something."],
-        "answer": " I need to eat something."
+        "options": ["I'm not hungry.", "I feel full.", "I need to eat something."],
+        "answer": "I need to eat something."
     },
     {
         "question": "We're going to get soaked.",
-        "options": [" It's raining heavily.", " I'm feeling dry.", " The sun is shining."],
-        "answer": " It's raining heavily."
+        "options": ["It's raining heavily.", "I'm feeling dry.", "The sun is shining."],
+        "answer": "It's raining heavily."
     },
     {
         "question": "She _____ (study) for her exam.",
-        "options": [" studies", " studied", " studying"],
-        "answer": " studies"
+        "options": ["studies", "studied", "studying"],
+        "answer": "studies"
     },
     {
         "question": "They _____ (not eat) dinner yet.",
-        "options": [" don't eat", " didn't eat", " not eating"],
-        "answer": " don't eat"
+        "options": ["are not eating", "didn't eat", "not eating"],
+        "answer": "are not eating"
     },
     {
         "question": "I _____ (prepare) breakfast right now.",
-        "options": [" prepare", " preparing", " prepares"],
-        "answer": " preparing"
+        "options": ["am preparing", "prepares", "prepare"],
+        "answer": "am preparing"
     },
     {
         "question": "What _____ you _____ (want) to watch?",
-        "options": [" do / want", " did / want", " does / want"],
-        "answer": " do / want"
+        "options": ["do / want", "did / want", "does / want"],
+        "answer": "do / want"
     },
     {
         "question": "We _____ (not/play) games tonight.",
-        "options": [" do not play", " does not play", " not playing"],
-        "answer": " do not play"
+        "options": ["are not playing", "does not play", "not playing"],
+        "answer": "are not playing"
     }
+            
         ]
     },
     unit3: {
