@@ -38,7 +38,7 @@ const allQuestions = {
     {
         "question": "She _____ (live) in Paris for five years. Now, she lives in London.",
         "options": [" lived", " lives", " living"],
-        "answer": " lives"
+        "answer": " lived"
     },
     {
         "question": "I _____ (do) my homework every evening. Yesterday, I _____ (finish) it early.",
