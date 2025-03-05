@@ -42,8 +42,8 @@ const allQuestions = {
     },
     {
         "question": "I _____ (do) my homework every evening. Yesterday, I _____ (finish) it early.",
-        "options": [" did / finished", " do / finish", " doing / finishing"],
-        "answer": " did / finished"
+        "options": [" do / finished", " do / finish", " doing / finishing"],
+        "answer": " do / finished"
     },
     {
         "question": "They _____ (play) football every Saturday. Last Saturday, they _____ (win) the game.",
