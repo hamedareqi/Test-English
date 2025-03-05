@@ -207,6 +207,6 @@ footer {
         margin-left: 5px; /* تقليل الهامش إذا لزم الأمر */
         width: 60px;
         height: 60px;
-        margin-bottom: 5px; /* نفس الهامش على الشاشات الصغيرة */
+        margin-bottom: 15px; /* نفس الهامش على الشاشات الصغيرة */
     }
 }
