@@ -109,6 +109,10 @@ button:hover {
     margin-top: 20px;
 }
 
+#questionTitle {
+    margin-bottom: 10px; /* مسافة بين السؤال وزر الصوت */
+}
+
 #options {
     margin-top: 20px;
     display: grid;
@@ -116,88 +120,17 @@ button:hover {
     gap: 10px;
 }
 
-#options button {
-    display: block;
-    width: calc(100% - 40px); /* لحساب المسافة مع زر الصوت */
-    padding: 10px;
-    background-color: #f8f9fa;
-    color: #333;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.2s;
-    font-weight: bolder;
-}
-
-#options button:hover {
-    background-color: #e2e6ea;
-    transform: scale(1.03);
-}
-
-.correct-answer {
-    background-color: #03d634 !important;
-    color: white !important;
-}
-
-.wrong-answer {
-    background-color: #f30119 !important;
-    color: white !important;
-}
-
-#results {
-    margin-top: 20px;
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    background-color: #f9f9f9;
-}
-
-.feedback-message {
-    margin-top: 20px;
-    font-weight: bold;
-}
-
-.correct {
-    color: green;
-}
-
-.incorrect {
-    color: red;
-}
-
-.progress-container {
-    width: 100%;
-    background-color: #e9ecef;
-    border-radius: 5px;
-    margin: 20px 0;
-}
-
-.progress-bar {
-    width: 0;
-    height: 10px;
-    background-color: #0056b3;
-    border-radius: 5px;
-    transition: width 0.3s ease;
-}
-
-#progressText {
-    margin-top: 10px;
-    font-weight: bold;
-}
-
-footer {
-    text-align: center;
-    margin-top: 40px;
-    padding: 20px;
-    background-color: transparent;
-    font-size: 0.9em;
-    color: #555;
-}
-
 .option-container {
     display: flex;
     align-items: center; /* موازاة الأزرار بشكل عمودي */
-    justify-content: flex-start; /* توزيع الأزرار بشكل متساوي */
+    justify-content: flex-start; /* توزيع الأزرار بحيث تكون قريبة من خيار الإجابة */
+}
+
+.option-container button {
+    width: auto; /* عرض الزر تلقائي */
+    padding: 5px 10px; /* مساحة داخلية للزر */
+    font-size: 0.9rem; /* حجم خط مناسب */
+    flex: 1; /* جعل الزر يأخذ المساحة المتاحة */
 }
 
 .speak-button {
@@ -220,9 +153,71 @@ footer {
     background-color: #218838; /* لون الزر عند التمرير */
 }
 
-.question-title {
-    display: flex;
-    align-items: center; 
-    justify-content: center; /* مركز الزر */
-    margin-bottom: 10px; /* مسافة بين السؤال والخيارات */
+.feedback-message {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.notification {
+    background-color: #f8d7da; /* لون الخلفية */
+    color: #721c24; /* لون النص */
+    padding: 10px;
+    border: 1px solid #f5c6cb; /* لون الحدود */
+    border-radius: 5px;
+    margin: 10px 0;
+    display: none; /* إخفاء الرسالة افتراضيًا */
+}
+
+.progress-container {
+    width: 100%;
+    background-color: #e9ecef;
+    border-radius: 5px;
+    margin: 20px 0;
+}
+
+.progress-bar {
+    width: 0;
+    height: 10px;
+    background-color: #0056b3;
+    border-radius: 5px;
+    transition: width 0.3s ease;
+}
+
+#progressText {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+#results {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+    background-color: transparent;
+    font-size: 0.9em;
+    color: #555;
+}
+
+@media screen and (max-width: 600px) {
+    .header {
+        justify-content: center; /* يضمن أن العناصر تبقى في المنتصف على الشاشات الصغيرة */
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .header-image {
+        margin-left: 5px; /* تقليل الهامش إذا لزم الأمر */
+        width: 50px; /* تقليل حجم الصورة */
+        height: 50px;
+        margin-bottom: 15px; /* نفس الهامش على الشاشات الصغيرة */
+    }
 }
