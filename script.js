@@ -52,8 +52,8 @@ const allQuestions = {
     },
     {
         "question": "He _____ (write) letters to his friends every month. Last week, he _____ (send) them invitations.",
-        "options": [" wrote / sent", " writes / sends", " writing / sending"],
-        "answer": " wrote / sent"
+        "options": [" writes / sent", " wrote / sent", " writing / sending"],
+        "answer": " writes / sent"
     },
     {
         "question": "Did they _____ (see) the new movie yesterday?",
@@ -87,8 +87,9 @@ const allQuestions = {
     },
     {
         "question": "They _____ (travel) to Japan every year.",
-        "options": [" traveled", " travels", " traveling"],
-        "answer": " travels"
+        "options": [" traveled", " travel", " traveling"],
+        "answer": " travel"
+    
     }
         ]
     },
@@ -107,7 +108,8 @@ const allQuestions = {
     { "question": "What is the synonym of 'Capable'?", "options": ["Unwilling to do anything", "Able to do something", "Limited in doing something"], "answer": "Able to do something" }
         ],
         grammar: [
-            {
+            
+        {
         "question": "He _____ (write) a letter.",
         "options": [" writes", " wrote", " writing"],
         "answer": " writes"
@@ -543,7 +545,7 @@ const allQuestions = {
         "answer": "study hard / pass the exam"
     },
     {
-        "question": "If it _____ , we will _____. (rains / cancel the picni.",
+        "question": "If it _____ , we will _____. (rains / cancel the picnic).",
         "options": ["rains / cancel the picnic", "rained / canceled the picnic", "rain / cancel"],
         "answer": "rains / cancel the picnic"
     }
@@ -867,22 +869,82 @@ const allQuestions = {
     { "question": "What is the synonym of 'Computer Architecture'?", "options": ["Study of hardware", "Design of networks", "Interaction between hardware and software"], "answer": "Interaction between hardware and software" }
         ],
         grammar: [
-            { "question": "_____ the door quietly. (Close)", "options": ["Close", "Closing", "Closed"], "answer": "Close" },
-    { "question": "_____ your homework before you go out. (Do)", "options": ["Do", "Doing", "Done"], "answer": "Do" },
-    { "question": "_____ that vase; it's very delicate. (Not touch)", "options": ["Don't touch", "Not touch", "Don't touching"], "answer": "Don't touch" },
-    { "question": "_____ me with this heavy box. (Help)", "options": ["Help", "Helping", "Helps"], "answer": "Help" },
-    { "question": "_____ the instructions carefully. (Read)", "options": ["Read", "Reading", "Reads"], "answer": "Read" },
-    { "question": "You should send the email immediately.", "options": ["Send the email immediately.", "You send the email immediately.", "Please send the email immediately."], "answer": "Send the email immediately." },
-    { "question": "Please do not forget to bring your book.", "options": ["Don't forget to bring your book.", "Forget to bring your book.", "Bring your book."], "answer": "Don't forget to bring your book." },
-    { "question": "You must attend the meeting tomorrow.", "options": ["Attend the meeting tomorrow.", "You attend the meeting tomorrow.", "Please attend the meeting tomorrow."], "answer": "Attend the meeting tomorrow." },
-    { "question": "Please be quiet during the exam.", "options": ["Be quiet during the exam.", "Don't be quiet during the exam.", "Please be quiet."], "answer": "Be quiet during the exam." },
-    { "question": "You need to finish your project by Friday.", "options": ["Finish your project by Friday.", "You finish your project by Friday.", "Please finish your project by Friday."], "answer": "Finish your project by Friday." },
-    { "question": "You should call your parents tonight.", "options": ["Call your parents tonight.", "You call your parents tonight.", "Please call your parents tonight."], "answer": "Call your parents tonight." },
-    { "question": "Don't forget to lock the door when you leave.", "options": ["Don't forget to lock the door.", "Forget to lock the door.", "Lock the door when you leave."], "answer": "Don't forget to lock the door." },
-    { "question": "You must wash your hands before dinner.", "options": ["Wash your hands before dinner.", "You wash your hands before dinner.", "Please wash your hands before dinner."], "answer": "Wash your hands before dinner." },
-    { "question": "You should turn off the lights when you leave.", "options": ["Turn off the lights when you leave.", "You turn off the lights when you leave.", "Please turn off the lights when you leave."], "answer": "Turn off the lights when you leave." },
-    { "question": "Don't make noise while the baby sleeps.", "options": ["Don't make noise while the baby sleeps.", "Make noise while the baby sleeps.", "Be quiet while the baby sleeps."], "answer": "Don't make noise while the baby sleeps." }
-        ]
+            { 
+        "question": "_____ the door quietly. (Close)", 
+        "options": ["Close", "Closing", "Closed"], 
+        "answer": "Close" 
+    },
+    { 
+        "question": "_____ your homework before you go out. (Do)", 
+        "options": ["Do", "Doing", "Done"], 
+        "answer": "Do" 
+    },
+    { 
+        "question": "_____ that vase; it's very delicate. (Not touch)", 
+        "options": ["Don't touch", "Not touch", "Don't touching"], 
+        "answer": "Don't touch" 
+    },
+    { 
+        "question": "_____ me with this heavy box. (Help)", 
+        "options": ["Help", "Helping", "Helps"], 
+        "answer": "Help" 
+    },
+    { 
+        "question": "_____ the instructions carefully. (Read)", 
+        "options": ["Read", "Reading", "Reads"], 
+        "answer": "Read" 
+    },
+    { 
+        "question": "You should send the email immediately.", 
+        "options": ["Send the email immediately.", "You send the email immediately.", "Please send the email immediately."], 
+        "answer": "Send the email immediately." 
+    },
+    { 
+        "question": "Please do not forget to bring your book.", 
+        "options": ["Don't forget to bring your book.", "Forget to bring your book.", "Bring your book."], 
+        "answer": "Don't forget to bring your book." 
+    },
+    { 
+        "question": "You must attend the meeting tomorrow.", 
+        "options": ["Attend the meeting tomorrow.", "You attend the meeting tomorrow.", "Please attend the meeting tomorrow."], 
+        "answer": "Attend the meeting tomorrow." 
+    },
+    { 
+        "question": "Please be quiet during the exam.", 
+        "options": ["Be quiet during the exam.", "Don't be quiet during the exam.", "Please be quiet."], 
+        "answer": "Be quiet during the exam." 
+    },
+    { 
+        "question": "You need to finish your project by Friday.", 
+        "options": ["Finish your project by Friday.", "You finish your project by Friday.", "Please finish your project by Friday."], 
+        "answer": "Finish your project by Friday." 
+    },
+    { 
+        "question": "You should call your parents tonight.", 
+        "options": ["Call your parents tonight.", "You call your parents tonight.", "Please call your parents tonight."], 
+        "answer": "Call your parents tonight." 
+    },
+    { 
+        "question": "Don't forget to lock the door when you leave.", 
+        "options": ["Don't forget to lock the door.", "Forget to lock the door.", "Lock the door when you leave."], 
+        "answer": "Don't forget to lock the door." 
+    },
+    { 
+        "question": "You must wash your hands before dinner.", 
+        "options": ["Wash your hands before dinner.", "You wash your hands before dinner.", "Please wash your hands before dinner."], 
+        "answer": "Wash your hands before dinner." 
+    },
+    { 
+        "question": "You should turn off the lights when you leave.", 
+        "options": ["Turn off the lights when you leave.", "You turn off the lights when you leave.", "Please turn off the lights when you leave."], 
+        "answer": "Turn off the lights when you leave." 
+    },
+    { 
+        "question": "Don't make noise while the baby sleeps.", 
+        "options": ["Don't make noise while the baby sleeps.", "Make noise while the baby sleeps.", "Be quiet while the baby sleeps."], 
+        "answer": "Don't make noise while the baby sleeps." 
+    }
+                  ]
     },
     unit12: {
         lesson: [
@@ -898,22 +960,82 @@ const allQuestions = {
     { "question": "What is the synonym of 'Organism'?", "options": ["Living system", "Type of tissue", "Group of cells"], "answer": "Living system" }
         ],
         grammar: [
-            { "question": "If I _____ a million dollars, I _____ a big house now. (have / buy)", "options": ["have / buy", "had / would buy", "have / would buy"], "answer": "have / would buy" },
-    { "question": "If she _____ taller, she _____ basketball. (be / play)", "options": ["is / plays", "were / would play", "be / would play"], "answer": "were / would play" },
-    { "question": "If they _____ harder, they _____ today's exam. (study / pass)", "options": ["study / pass", "studied / would pass", "study / would pass"], "answer": "study / would pass" },
-    { "question": "If we _____ in Cairo, we _____ the tourist sites every weekend. (live / visit)", "options": ["lived / would visit", "live / visit", "lived / visit"], "answer": "lived / would visit" },
-    { "question": "If he _____ French, he _____ to Paris immediately. (speak / move)", "options": ["speaks / would move", "spoke / would move", "speak / would move"], "answer": "spoke / would move" },
-    { "question": "If I _____ you were coming, I _____ a cake this afternoon. (know / bake)", "options": ["knew / would bake", "know / will bake", "knew / baked"], "answer": "knew / would bake" },
-    { "question": "If she _____ harder, she _____ the exam last semester. (study / pass)", "options": ["studied / would have passed", "studies / passed", "had studied / would pass"], "answer": "studied / would have passed" },
-    { "question": "If we _____ earlier, we _____ the train. (leave / catch)", "options": ["left / would catch", "leave / would catch", "had left / would have caught"], "answer": "had left / would have caught" },
-    { "question": "If they _____ more money, they _____ a bigger house. (save / buy)", "options": ["saved / would buy", "save / would buy", "had saved / would have bought"], "answer": "saved / would buy" },
-    { "question": "She doesn't know his phone number, so she can't call him.", "options": ["If she knew his phone number, she would call him.", "If she knows his phone number, she can call him.", "If she has his phone number, she would call him."], "answer": "If she knew his phone number, she would call him." },
-    { "question": "We can't go outside because it's raining.", "options": ["If it were not raining, we would go outside.", "If it didn't rain, we would go outside.", "If it was not raining, we could go outside."], "answer": "If it were not raining, we would go outside." },
-    { "question": "He doesn't speak Spanish, so he can't work in Spain.", "options": ["If he spoke Spanish, he would work in Spain.", "If he speaks Spanish, he can work in Spain.", "If he had spoken Spanish, he would work in Spain."], "answer": "If he spoke Spanish, he would work in Spain." },
-    { "question": "They aren't rich, so they don't live in a big house.", "options": ["If they were rich, they would live in a big house.", "If they are rich, they will live in a big house.", "If they had been rich, they would have lived in a big house."], "answer": "If they were rich, they would live in a big house." },
-    { "question": "They didn't finish the project because they ran out of time.", "options": ["If they had finished the project, they would have had time.", "If they had had time, they would have finished the project.", "If they finished the project, they would have time."], "answer": "If they had had time, they would have finished the project." },
-    { "question": "He didn't propose to her because he was too shy.", "options": ["If he hadn't been too shy, he would have proposed to her.", "If he was not too shy, he would propose to her.", "If he had not been too shy, he would propose to her."], "answer": "If he hadn't been too shy, he would have proposed to her." }
-        ]
+            { 
+        "question": "If I _____ a million dollars, I _____ a big house now. (have / buy)", 
+        "options": ["have / buy", "had / would buy", "have / would buy"], 
+        "answer": "have / would buy" 
+    },
+    { 
+        "question": "If she _____ taller, she _____ basketball. (be / play)", 
+        "options": ["is / plays", "were / would play", "be / would play"], 
+        "answer": "were / would play" 
+    },
+    { 
+        "question": "If they _____ harder, they _____ today's exam. (study / pass)", 
+        "options": ["study / pass", "studied / would pass", "study / would pass"], 
+        "answer": "study / would pass" 
+    },
+    { 
+        "question": "If we _____ in Cairo, we _____ the tourist sites every weekend. (live / visit)", 
+        "options": ["lived / would visit", "live / visit", "lived / visit"], 
+        "answer": "lived / would visit" 
+    },
+    { 
+        "question": "If he _____ French, he _____ to Paris immediately. (speak / move)", 
+        "options": ["speaks / would move", "spoke / would move", "speak / would move"], 
+        "answer": "spoke / would move" 
+    },
+    { 
+        "question": "If I _____ you were coming, I _____ a cake this afternoon. (know / bake)", 
+        "options": ["knew / would bake", "know / will bake", "knew / baked"], 
+        "answer": "knew / would bake" 
+    },
+    { 
+        "question": "If she _____ harder, she _____ the exam last semester. (study / pass)", 
+        "options": ["studied / would have passed", "studies / passed", "had studied / would pass"], 
+        "answer": "studied / would have passed" 
+    },
+    { 
+        "question": "If we _____ earlier, we _____ the train. (leave / catch)", 
+        "options": ["left / would catch", "leave / would catch", "had left / would have caught"], 
+        "answer": "had left / would have caught" 
+    },
+    { 
+        "question": "If they _____ more money, they _____ a bigger house. (save / buy)", 
+        "options": ["saved / would buy", "save / would buy", "had saved / would have bought"], 
+        "answer": "saved / would buy" 
+    },
+    { 
+        "question": "She doesn't know his phone number, so she can't call him.", 
+        "options": ["If she knew his phone number, she would call him.", "If she knows his phone number, she can call him.", "If she has his phone number, she would call him."], 
+        "answer": "If she knew his phone number, she would call him." 
+    },
+    { 
+        "question": "We can't go outside because it's raining.", 
+        "options": ["If it were not raining, we would go outside.", "If it didn't rain, we would go outside.", "If it was not raining, we could go outside."], 
+        "answer": "If it were not raining, we would go outside." 
+    },
+    { 
+        "question": "He doesn't speak Spanish, so he can't work in Spain.", 
+        "options": ["If he spoke Spanish, he would work in Spain.", "If he speaks Spanish, he can work in Spain.", "If he had spoken Spanish, he would work in Spain."], 
+        "answer": "If he spoke Spanish, he would work in Spain." 
+    },
+    { 
+        "question": "They aren't rich, so they don't live in a big house.", 
+        "options": ["If they were rich, they would live in a big house.", "If they are rich, they will live in a big house.", "If they had been rich, they would have lived in a big house."], 
+        "answer": "If they were rich, they would live in a big house." 
+    },
+    { 
+        "question": "They didn't finish the project because they ran out of time.", 
+        "options": ["If they had finished the project, they would have had time.", "If they had had time, they would have finished the project.", "If they finished the project, they would have time."], 
+        "answer": "If they had had time, they would have finished the project." 
+    },
+    { 
+        "question": "He didn't propose to her because he was too shy.", 
+        "options": ["If he hadn't been too shy, he would have proposed to her.", "If he was not too shy, he would propose to her.", "If he had not been too shy, he would propose to her."], 
+        "answer": "If he hadn't been too shy, he would have proposed to her." 
+    }
+                    ]
     },
 };
 
