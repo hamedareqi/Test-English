@@ -8,7 +8,8 @@
     <title>English 102 Quiz</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-    <script src="https://code.responsivevoice.org/responsivevoice.js"></script> <!-- إضافة مكتبة ResponsiveVoice -->
+    <script src="https://code.responsivevoice.org/responsivevoice.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.6/lottie.min.js"></script> <!-- إضافة مكتبة Lottie -->
 </head>
 <body>
     <div class="container animate__animated animate__fadeIn">
@@ -27,7 +28,7 @@
 
         <div id="quizInterface" style="display: none;">
             <h2 id="questionTitle"></h2>
-            <button class="read-button" onclick="readText('questionTitle')">Listen to Question</button> <!-- زر قراءة السؤال -->
+            <button class="read-button" onclick="readText('questionTitle')">Listen to Question</button>
             <div id="options"></div>
             <p id="feedback" class="feedback-message"></p>
             <div class="progress-container">
@@ -50,8 +51,14 @@
     </footer>
 
     <script>
+        // تحميل الرسوم المتحركة من ملف JSON
         fetch('animation.json')
-            .then(response => response.json())
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok ' + response.statusText);
+                }
+                return response.json();
+            })
             .then(data => {
                 lottie.loadAnimation({
                     container: document.getElementById('lottie-animation'), // تحديد الحاوية
